@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <title>GummyBeauty – Pagamento seguro</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet"
+  />
+</head>
+<body style="background:#f5f7fb">
+  <!-- HEADER SIMPLES -->
+  <header class="header">
+    <div class="container header-inner">
+      <div class="logo">
+        <span class="logo-icon">🍓</span>
+        <span class="logo-text">GUMMYBEAUTY BRASIL</span>
+      </div>
+      <nav class="nav">
+        <a href="index.html#oferta">Voltar para a loja</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container" style="padding:32px 0 60px;">
+    <div style="margin-bottom:18px; font-size:0.9rem; color:#7b5b6b;">
+      Finalize seu pedido em <strong id="checkoutTimer">20:00</strong> para garantir o valor e o brinde. 💗
+    </div>
+
+    <div class="checkout-grid" style="display:grid;grid-template-columns: minmax(0,1.5fr) minmax(0,1fr);gap:28px;align-items:flex-start;">
+      <!-- COLUNA ESQUERDA: FORMULÁRIO 3 ETAPAS -->
+      <section class="checkout-steps" style="background:#fff;border-radius:18px;padding:24px 22px;box-shadow:0 18px 40px rgba(0,0,0,0.06);">
+        <!-- ETAPAS -->
+        <div style="display:flex;gap:12px;margin-bottom:18px;font-size:0.88rem;">
+          <div class="step-pill step-active" id="stepPill1">1. Identificação</div>
+          <div class="step-pill" id="stepPill2">2. Entrega</div>
+          <div class="step-pill" id="stepPill3">3. Pagamento</div>
+        </div>
+
+        <form id="checkoutForm">
+          <!-- STEP 1 -->
+          <div class="step-block" id="step1">
+            <h2 style="font-size:1.1rem;margin-bottom:8px;">Quem vai receber?</h2>
+            <p style="font-size:0.85rem;color:#7b5b6b;margin-bottom:16px;">
+              Usamos esses dados para e-mail de confirmação e histórico do pedido.
+            </p>
+
+            <label class="field">
+              <span>Nome completo</span>
+              <input type="text" name="fullName" required />
+            </label>
+
+            <label class="field">
+              <span>E-mail</span>
+              <input type="email" name="email" required />
+            </label>
+
+            <label class="field">
+              <span>CPF</span>
+              <input type="text" name="cpf" placeholder="000.000.000-00" required />
+            </label>
+
+            <label class="field">
+              <span>Celular / WhatsApp</span>
+              <input type="tel" name="phone" placeholder="(00) 00000-0000" required />
+            </label>
+
+            <button type="button" class="btn btn-primary" style="margin-top:18px;" onclick="goToStep(2)">
+              Continuar para entrega
+            </button>
+          </div>
+
+          <!-- STEP 2 -->
+          <div class="step-block" id="step2" style="display:none;">
+            <h2 style="font-size:1.1rem;margin-bottom:8px;">Endereço de entrega</h2>
+            <p style="font-size:0.85rem;color:#7b5b6b;margin-bottom:16px;">
+              Informe o endereço onde você quer receber seus GummyBeauty.
+            </p>
+
+            <label class="field">
+              <span>CEP</span>
+              <input type="text" name="cep" placeholder="00000-000" required />
+            </label>
+
+            <label class="field">
+              <span>Endereço</span>
+              <input type="text" name="street" required />
+            </label>
+
+            <div style="display:flex;gap:10px;">
+              <label class="field" style="flex:0.6;">
+                <span>Número</span>
+                <input type="text" name="number" required />
+              </label>
+
+              <label class="field" style="flex:1;">
+                <span>Bairro</span>
+                <input type="text" name="district" required />
+              </label>
+            </div>
+
+            <label class="field">
+              <span>Cidade / UF</span>
+              <input type="text" name="cityState" placeholder="São Paulo / SP" required />
+            </label>
+
+            <label class="field">
+              <span>Complemento (opcional)</span>
+              <input type="text" name="complement" />
+            </label>
+
+            <div style="display:flex;justify-content:space-between;gap:12px;margin-top:18px;">
+              <button type="button" class="btn btn-secondary" onclick="goToStep(1)">
+                Voltar
+              </button>
+              <button type="button" class="btn btn-primary" onclick="goToStep(3)">
+                Ir para pagamento
+              </button>
+            </div>
+          </div>
+
+          <!-- STEP 3 -->
+          <div class="step-block" id="step3" style="display:none;">
+            <h2 style="font-size:1.1rem;margin-bottom:8px;">Forma de pagamento</h2>
+            <p style="font-size:0.85rem;color:#7b5b6b;margin-bottom:16px;">
+              Pagamento 100% seguro via Mercado Pago – Pix ou cartão em até 3x.
+            </p>
+
+            <div class="pay-method" style="border:1px solid #ffd3ec;border-radius:14px;padding:12px 14px;margin-bottom:8px;display:flex;align-items:center;gap:10px;">
+              <input type="radio" name="payMethod" value="pix" id="payPix" checked />
+              <label for="payPix" style="font-size:0.9rem;"><strong>Pix</strong> (confirmação em poucos minutos)</label>
+            </div>
+
+            <div class="pay-method" style="border:1px solid #f1e1ff;border-radius:14px;padding:12px 14px;display:flex;align-items:center;gap:10px;">
+              <input type="radio" name="payMethod" value="card" id="payCard" />
+              <label for="payCard" style="font-size:0.9rem;"><strong>Cartão de crédito</strong> (em até 3x sem juros)</label>
+            </div>
+
+            <div style="display:flex;justify-content:space-between;gap:12px;margin-top:20px;">
+              <button type="button" class="btn btn-secondary" onclick="goToStep(2)">
+                Voltar
+              </button>
+
+              <button type="submit" class="btn btn-primary" id="payButton">
+                Pagar agora (Pix ou cartão)
+              </button>
+            </div>
+
+            <p id="checkoutError" style="color:#d22;font-size:0.8rem;margin-top:10px;display:none;"></p>
+          </div>
+        </form>
+      </section>
+
+      <!-- COLUNA DIREITA: RESUMO -->
+      <aside class="checkout-summary" style="background:#fff;border-radius:18px;padding:22px 20px;box-shadow:0 18px 40px rgba(0,0,0,0.06);">
+        <h3 style="font-size:1rem;margin-bottom:12px;">Resumo do pedido</h3>
+
+        <div id="summaryItems" style="border-bottom:1px solid #f3ddea;padding-bottom:12px;margin-bottom:12px;">
+          <!-- itens do carrinho aqui -->
+        </div>
+
+        <div style="font-size:0.9rem;">
+          <div style="display:flex;justify-content:space-between;margin-bottom:4px;">
+            <span>Produtos</span>
+            <span id="summarySubtotal">R$ 0,00</span>
+          </div>
+          <div style="display:flex;justify-content:space-between;margin-bottom:4px;">
+            <span>Frete</span>
+            <span id="summaryShipping">R$ 0,00</span>
+          </div>
+          <div style="display:flex;justify-content:space-between;font-weight:600;margin-top:6px;">
+            <span>Total</span>
+            <span id="summaryTotal">R$ 0,00</span>
+          </div>
+          <p id="shippingBadge" style="font-size:0.8rem;color:#24a148;margin-top:6px;display:none;">
+            Frete grátis aplicado 🎉
+          </p>
+        </div>
+
+        <p style="font-size:0.8rem;color:#7b5b6b;margin-top:10px;">
+          Pagamento processado por <strong>Mercado Pago</strong>. Seus dados estão protegidos em ambiente seguro.
+        </p>
+      </aside>
+    </div>
+  </main>
+
+  <script src="checkout.js"></script>
+</body>
+</html>

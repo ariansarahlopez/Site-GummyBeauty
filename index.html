@@ -1,0 +1,585 @@
+ <!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <title>GUMMYBEAUTY BRASIL – Vitaminas em Gummies para Cabelo, Pele e Unhas</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta
+    name="description"
+    content="GummyBeauty Brasil – vitaminas em gominha para cabelo, pele e unhas. Fórmula premium desenvolvida em laboratório brasileiro, com sabor incrível e resultados reais."
+  />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="icon" type="image/png" href="https://i.ibb.co/Y4xhJp4D/Chat-GPT-Image-18-de-nov-de-2025-15-11-27.png">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <!-- BARRA SUPERIOR -->
+ <div class="top-bar">
+  <div class="top-bar-track">
+    <span>✨ Frete GRÁTIS a partir de 2 frascos ✨</span>
+    <span>💗 Pague no Pix ou cartão em até 3x sem juros 💗</span>
+    <span>🍓 Fórmula brasileira premium • Resultados reais 🍓</span>
+    <span>✨ Frete GRÁTIS a partir de 2 frascos ✨</span>
+    <span>💗 Pague no Pix ou cartão em até 3x sem juros 💗</span>
+    <span>🍓 Fórmula brasileira premium • Resultados reais 🍓</span>
+  </div>
+</div>
+
+ <a href="preventa.html" class="pre-venda-mobile">PRÉ-VENDA 🔥</a>
+
+  <!-- HEADER -->
+  <header class="header">
+    <div class="container header-inner">
+      <div class="logo">
+        <span class="logo-icon">🍓</span>
+        <span class="logo-text">GUMMYBEAUTY BRASIL</span>
+      </div>
+
+      <nav class="nav">
+        <a href="preventa.html" class="btn btn-primary">PRÉ-VENDA 🔥</a>
+        <a href="#hero">Início</a>
+        <a href="#oferta">Ofertas</a>
+        <a href="#beneficios">Benefícios</a>
+        <a href="#faq">FAQ</a>
+        <a href="#contacto">Contato</a>
+      </nav>
+
+      <a href="#oferta" class="btn btn-outline">Comprar agora</a>
+      <button class="mobile-menu-btn" id="mobileMenuBtn">
+        ☰
+      </button>
+    </div>
+
+    <nav class="nav-mobile" id="navMobile">
+      <a href="#hero">Início</a>
+      <a href="#oferta">Ofertas</a>
+      <a href="#beneficios">Benefícios</a>
+      <a href="#faq">FAQ</a>
+      <a href="#contacto">Contato</a>
+    </nav>
+  </header>
+
+  <!-- HERO / BANNER -->
+  <section id="hero" class="hero">
+    <div class="container hero-grid">
+      <div class="hero-text">
+        <h1>
+          Cabelo forte, pele iluminada<br />
+          e unhas impecáveis ✨
+        </h1>
+        <p class="hero-subtitle">
+          GUMMYBEAUTY é a gominha brasileira para Hair, Skin & Nails que nutre
+          a sua beleza de dentro pra fora. Fórmula premium criada em
+          <span class="text-gold">laboratório brasileiro certificado</span>.
+        </p>
+
+        <div class="hero-badges">
+          <span class="badge badge-gold">Laboratório brasileiro</span>
+          <span class="badge">Vegano · Sem açúcares adicionados*</span>
+        </div>
+
+        <div class="hero-actions">
+          <a href="#oferta" class="btn btn-primary">Quero começar meu tratamento</a>
+          <span class="hero-small-text">💗 Resultados visíveis em poucas semanas com uso diário.</span>
+        </div>
+      </div>
+
+      <div class="hero-image">
+        <div class="product-card">
+          <img src="https://i.ibb.co/67XxSjjw/Gemini-Generated-Image-jefdmvjefdmvjefd-1.png" alt="GummyBeauty Hair Skin & Nails" />
+          <div class="product-tag">Promoção de pré-venda por tempo limitado</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- OFERTA -->
+  <section id="oferta" class="section section-soft">
+    <div class="container">
+      <div class="section-header center">
+        <h2>Escolha o seu pack GUMMYBEAUTY</h2>
+        <p>Quanto mais tempo você usa, melhores e mais estáveis ficam os resultados.</p>
+      </div>
+
+      <div class="offer-grid">
+
+        <!-- 1 frasco -->
+        <article class="offer-card">
+          <div class="offer-tag">Início</div>
+          <h3>1 frasco</h3>
+          <p class="offer-desc">Tratamento para 30 dias.</p>
+          <div class="offer-price">
+            <span class="price-now">R$ 129,90</span>
+            <span class="price-old">R$ 159,90</span>
+          </div>
+          <ul class="offer-list">
+            <li>Ideal para experimentar o produto</li>
+            <li>Primeiros resultados em cabelo e unhas</li>
+          </ul>
+
+          <button class="btn btn-secondary"
+            onclick="addToCart(
+              '1 Frasco – 30 dias',
+              129.90,
+              '#',
+              'img/cart-1frasco.png'
+            )">
+            Adicionar ao carrinho
+          </button>
+        </article>
+
+        <!-- 2 frascos -->
+        <article class="offer-card offer-card-featured">
+          <div class="offer-tag offer-tag-hot">Mais vendido</div>
+          <h3>2 frascos</h3>
+          <p class="offer-desc">60 dias de tratamento + frete GRÁTIS.</p>
+
+          <div class="offer-price">
+            <span class="price-now">R$ 229,90</span>
+            <span class="price-old">R$ 269,90</span>
+          </div>
+
+          <ul class="offer-list">
+            <li>Melhor relação custo / resultado</li>
+            <li>Cabelo mais forte, pele mais luminosa</li>
+            <li>Frete GRÁTIS para todo o Brasil</li>
+          </ul>
+
+          <button class="btn btn-secondary"
+            onclick="addToCart(
+              '2 Frascos – 60 dias',
+              229.90,
+              '#',
+              'img/cart-2frascos.png'
+            )">
+            Adicionar ao carrinho
+          </button>
+        </article>
+
+        <!-- 3 frascos -->
+        <article class="offer-card">
+          <div class="offer-tag">Economize mais</div>
+          <h3>3 frascos</h3>
+          <p class="offer-desc">90 dias de transformação completa.</p>
+
+          <div class="offer-price">
+            <span class="price-now">R$ 309,90</span>
+            <span class="price-old">R$ 349,90</span>
+          </div>
+
+          <ul class="offer-list">
+            <li>Resultados estáveis e duradouros</li>
+            <li>Frete GRÁTIS + prioridade no suporte</li>
+          </ul>
+
+          <button class="btn btn-secondary"
+            onclick="addToCart(
+              '3 Frascos – 90 dias',
+              309.90,
+              '#',
+              'img/cart-3frascos.png'
+            )">
+            Adicionar ao carrinho
+          </button>
+        </article>
+      </div>
+
+      <p class="section-note center">
+        💳 Pague com Pix ou cartão de crédito · até 3x sem juros nos principais bancos.
+      </p>
+    </div>
+  </section>
+
+  <!-- BENEFÍCIOS -->
+  <section id="beneficios" class="section">
+    <div class="container">
+      <div class="section-header center">
+        <h2>Benefícios para Hair · Skin · Nails</h2>
+        <p>Uma única fórmula pensada para a sua beleza completa.</p>
+      </div>
+
+      <div class="benefits-grid">
+        <article class="benefit-card">
+          <div class="benefit-icon">💇‍♀️</div>
+          <h3>Cabelo</h3>
+          <p>
+            Menos queda, crescimento mais rápido e muito mais brilho graças à
+            biotina, ao zinco e ao colágeno.
+          </p>
+        </article>
+
+        <article class="benefit-card">
+          <div class="benefit-icon">💖</div>
+          <h3>Pele</h3>
+          <p>
+            Pele mais luminosa, hidratada e uniforme com a ação do colágeno,
+            vitaminas A, C e E e ácido hialurônico.
+          </p>
+        </article>
+
+        <article class="benefit-card">
+          <div class="benefit-icon">💅</div>
+          <h3>Unhas</h3>
+          <p>
+            Unhas fortes, menos quebra e crescimento visível com o uso
+            constante.
+          </p>
+        </article>
+
+        <article class="benefit-card">
+          <div class="benefit-icon">✨</div>
+          <h3>Autoconfiança</h3>
+          <p>
+            Você se vê melhor, se sente melhor. Mais segurança em fotos,
+            reuniões e no dia a dia.
+          </p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- INGREDIENTES -->
+  <section id="ingredientes" class="section section-soft">
+    <div class="container ingredients-grid">
+      <div>
+        <div class="section-header">
+          <h2>Fórmula brasileira premium</h2>
+          <p>
+            GUMMYBEAUTY nasce em um laboratório brasileiro especializado em
+            suplementos de beleza feminina. Ingredientes selecionados, doses
+            inteligentes e um sabor que dá vontade de não esquecer.
+          </p>
+        </div>
+
+        <ul class="ingredients-list">
+          <li>
+            <span class="ing-name">Biotina 5000 mcg</span>
+            <span class="ing-desc">Estimula o crescimento de cabelo e unhas.</span>
+          </li>
+          <li>
+            <span class="ing-name">Colágeno hidrolisado</span>
+            <span class="ing-desc">Melhora a firmeza e a elasticidade da pele.</span>
+          </li>
+          <li>
+            <span class="ing-name">Vitaminas A, C e E</span>
+            <span class="ing-desc">Ação antioxidante contra o envelhecimento precoce.</span>
+          </li>
+          <li>
+            <span class="ing-name">Ácido hialurônico</span>
+            <span class="ing-desc">Hidratação profunda de dentro pra fora.</span>
+          </li>
+          <li>
+            <span class="ing-name">Zinco + Vitamina B6</span>
+            <span class="ing-desc">Reduz a queda e fortalece as raízes.</span>
+          </li>
+        </ul>
+
+        <p class="section-note">
+          🧪 Desenvolvido em <span class="text-gold">laboratório brasileiro certificado</span>,
+          com padrão de qualidade e segurança para uso diário.
+        </p>
+      </div>
+
+      <div class="ingredients-image">
+        <img src="https://i.ibb.co/n24qZTs/Chat-GPT-Image-18-de-nov-de-2025-23-12-17.png" alt="Ingredientes de GummyBeauty" />
+      </div>
+    </div>
+  </section>
+
+  <!-- COMO USAR -->
+  <section id="como-usar" class="section">
+    <div class="container how-grid">
+      <div>
+        <div class="section-header">
+          <h2>Como usar GUMMYBEAUTY</h2>
+          <p>Simples, gostoso e fácil de incluir na sua rotina.</p>
+        </div>
+
+        <ol class="how-steps">
+          <li>Tome <strong>2 gominhas por dia</strong>, com ou sem alimento.</li>
+          <li>Seja constante todos os dias, como se fosse seu skincare interno.</li>
+          <li>Beba água ao longo do dia para potencializar os resultados.</li>
+        </ol>
+
+        <ul class="how-timeline">
+          <li><span>15 dias</span> Mais brilho e energia.</li>
+          <li><span>30 dias</span> Menos queda e unhas mais fortes.</li>
+          <li><span>60+ dias</span> Cabelo, pele e unhas visivelmente transformados.</li>
+        </ul>
+      </div>
+
+      <div class="how-image">
+        <img src="https://i.ibb.co/R4tMRvCY/Gemini-Generated-Image-3742za3742za374.png" alt="Como usar GummyBeauty" />
+      </div>
+    </div>
+  </section>
+
+  <!-- RESULTADOS -->
+  <section id="resultados" class="section section-soft">
+    <div class="container">
+      <div class="section-header center">
+        <h2>Resultados reais</h2>
+        <p>Histórias de mulheres que já escolheram GUMMYBEAUTY.</p>
+      </div>
+
+      <div class="results-grid">
+        <div class="before-after">
+          <div class="before">
+            <span class="ba-label">Antes</span>
+            <img src="https://i.ibb.co/mry4ZRfP/Gemini-Generated-Image-jdeu13jdeu13jde.png" alt="Antes de GummyBeauty" />
+          </div>
+          <div class="after">
+            <span class="ba-label">Depois</span>
+            <img src="https://i.ibb.co/VWVNcx4M/Gemini-Generated-Image-jdeu13jdeu13jdeu.png" alt="Depois de GummyBeauty" />
+          </div>
+        </div>
+
+        <div class="testimonials">
+          <article class="testimonial">
+            <div class="stars">★★★★★</div>
+            <p>
+              “Em 2 meses meu cabelo parou de cair como antes. Sinto mais
+              brilho e volume. As gominhas são deliciosas!”
+            </p>
+            <span class="testimonial-name">Camila · São Paulo</span>
+          </article>
+
+          <article class="testimonial">
+            <div class="stars">★★★★★</div>
+            <p>
+              “Minhas unhas não quebram mais e minha pele está muito mais
+              uniforme. Parece que encontrei meu suplemento definitivo.”
+            </p>
+            <span class="testimonial-name">Rocío · Curitiba</span>
+          </article>
+
+          <article class="testimonial">
+            <div class="stars">★★★★☆</div>
+            <p>
+              “Escolhi porque é produzido em laboratório brasileiro. Me passou
+              confiança e os resultados apareceram antes do que eu esperava.”
+            </p>
+            <span class="testimonial-name">Valentina · Florianópolis</span>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- GARANTIA -->
+  <section id="garantia" class="section guarantee-section">
+    <div class="container guarantee-inner">
+      <div class="guarantee-badge">
+        <span class="g-number">30</span>
+        <span class="g-text">DIAS DE GARANTIA</span>
+      </div>
+
+      <div class="guarantee-text">
+        <h2>Nossa garantia de 30 dias sem risco</h2>
+        <p>
+          Estamos tão confiantes de que você vai se apaixonar por GUMMYBEAUTY que,
+          se em 30 dias você não estiver satisfeita com os resultados, é só falar com a gente e
+          <strong>devolvemos 100% do seu dinheiro</strong>.
+        </p>
+        <p>
+          Sem burocracia, sem letra miúda. Só queremos que você se apaixone pelo processo
+          de se cuidar de dentro pra fora.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- REVIEWS (GALERIA) -->
+  <section id="reviews" class="section">
+    <div class="container">
+      <div class="section-header center">
+        <h2>Mais de 4.000 clientes felizes</h2>
+        <p>Fotos reais com GUMMYBEAUTY na rotina delas.</p>
+      </div>
+
+      <div class="reviews-grid">
+        <div class="review-photo">
+          <img src="https://i.ibb.co/WpN5cbkg/Gemini-Generated-Image-64ndla64ndla64nd.png" alt="Cliente com GummyBeauty" />
+        </div>
+        <div class="review-photo">
+          <img src="https://i.ibb.co/hFns4xq8/Gemini-Generated-Image-cldu6lcldu6lcldu.png" alt="Cliente com GummyBeauty" />
+        </div>
+        <div class="review-photo">
+          <img src="https://i.ibb.co/DgKx10gS/Chat-GPT-Image-18-de-nov-de-2025-23-02-25.png" alt="Cliente com GummyBeauty" />
+        </div>
+        <div class="review-photo">
+          <img src="https://i.ibb.co/bjfvMZXn/Chat-GPT-Image-18-de-nov-de-2025-23-06-34.png" alt="Cliente com GummyBeauty" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section id="faq" class="section section-soft">
+    <div class="container">
+      <div class="section-header center">
+        <h2>Perguntas frequentes</h2>
+        <p>Se você ainda tem dúvidas, aqui respondemos o principal.</p>
+      </div>
+
+      <div class="faq-list">
+        <article class="faq-item">
+          <button class="faq-question">
+            É seguro tomar GUMMYBEAUTY todos os dias?
+            <span class="faq-toggle">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>
+              Sim. A fórmula foi pensada para uso diário por mulheres adultas
+              saudáveis. Em caso de condição médica ou uso de medicamentos,
+              recomendamos sempre conversar com seu médico.
+            </p>
+          </div>
+        </article>
+
+        <article class="faq-item">
+          <button class="faq-question">
+            Quando vou começar a ver resultados?
+            <span class="faq-toggle">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>
+              Muitas clientes relatam mudanças em brilho e textura em 3–4
+              semanas. Para resultados completos de crescimento recomendamos
+              usar pelo menos 2–3 meses seguidos.
+            </p>
+          </div>
+        </article>
+
+        <article class="faq-item">
+          <button class="faq-question">
+            Posso tomar junto com outros suplementos?
+            <span class="faq-toggle">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>
+              Em geral é compatível com multivitamínicos comuns, mas se você já
+              usa outros produtos para cabelo/pele/unhas, o ideal é consultar um
+              profissional para evitar duplicar doses.
+            </p>
+          </div>
+        </article>
+
+        <article class="faq-item">
+          <button class="faq-question">
+            Vocês enviam para todo o Brasil?
+            <span class="faq-toggle">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>
+              Sim, enviamos para todo o Brasil. Nas compras a partir de 2 frascos
+              o frete é GRÁTIS para a maioria das regiões.
+            </p>
+          </div>
+        </article>
+
+        <article class="faq-item">
+          <button class="faq-question">
+            O produto é realmente feito no Brasil?
+            <span class="faq-toggle">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>
+              GUMMYBEAUTY é desenvolvido e produzido em laboratório brasileiro
+              especializado em suplementos de beleza, seguindo as normas vigentes.
+            </p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTATO / FOOTER -->
+  <footer id="contacto" class="footer">
+    <div class="container footer-grid">
+      <div>
+        <div class="logo footer-logo">
+          <span class="logo-icon">🍓</span>
+          <span class="logo-text">GUMMYBEAUTY BRASIL</span>
+        </div>
+        <p class="footer-text">
+          Hair, Skin & Nails criadas em laboratório brasileiro. Resultados reais
+          de dentro pra fora.
+        </p>
+      </div>
+
+      <div class="footer-links">
+        <h4>Explorar</h4>
+        <a href="#hero">Início</a>
+        <a href="#oferta">Comprar</a>
+        <a href="#beneficios">Benefícios</a>
+        <a href="#faq">FAQ</a>
+      </div>
+
+      <div class="footer-links">
+        <h4>Ajuda</h4>
+        <a href="#">Política de envio</a>
+        <a href="#">Política de trocas e devoluções</a>
+        <a href="#">Termos & Condições</a>
+      </div>
+
+      <div class="footer-contact">
+        <h4>Contato</h4>
+        <p>Email: ola@gummybeauty.com.br</p>
+        <p>WhatsApp: +55 11 0000-0000</p>
+        <a href="https://instagram.com/gummybeauty.br" target="_blank" class="footer-ig">
+          Instagram @gummybeauty.br
+        </a>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>© <span id="year"></span> GUMMYBEAUTY BRASIL · Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <!-- Botão do carrinho flutuante -->
+  <div class="cart-icon" onclick="openCart()">
+    🛒
+    <span id="cartCount" class="cart-count">0</span>
+  </div>
+
+  <!-- CARRINHO LATERAL -->
+  <div id="cartSidebar" class="cart-sidebar">
+
+    <div class="cart-header">
+      <h3>Seu carrinho</h3>
+      <button class="close-cart" onclick="closeCart()">×</button>
+    </div>
+
+    <div id="cart-items" class="cart-items">
+      <p class="empty-cart">Seu carrinho está vazio</p>
+    </div>
+
+    <div class="cart-total-row">
+      <span>Total</span>
+      <span id="cartTotal">R$ 0,00</span>
+    </div>
+
+    <div class="cart-actions">
+      <button class="continue-btn" onclick="closeCart()">Continuar comprando</button>
+      <button class="clear-btn" onclick="clearCart()">Esvaziar carrinho</button>
+      <a id="checkoutBtn" class="checkout-btn" target="_blank" style="display:none;">
+        Finalizar a compra
+      </a>
+    </div>
+  </div>
+
+  <!-- Overlay -->
+  <div id="cartOverlay" class="cart-overlay" onclick="closeCart()"></div>
+
+  <!-- Toast / popup de produto adicionado -->
+  <div id="cartToast" class="cart-toast">Produto adicionado 🍓</div>
+</body>
+</html>

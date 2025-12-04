@@ -1,0 +1,201 @@
+:root {
+  --pink: #ff9acb;
+  --pink-dark: #ff5ca8;
+  --gold: #c59b45;
+  --bg: #fff3fa;
+  --white: #fff;
+  --text: #3a2d35;
+}
+
+body {
+  margin: 0;
+  font-family: Poppins, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+}
+
+/* Top */
+.top {
+  background: var(--pink-dark);
+  color: #fff;
+  padding: 8px;
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+/******** HERO ********/
+.hero {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 2.3rem;
+  color: var(--pink-dark);
+}
+
+.sub {
+  max-width: 420px;
+  margin: 10px auto 20px;
+}
+
+.hero-img {
+  width: 280px;
+  margin: 25px auto 0;
+}
+
+.countdown {
+  font-size: 1.3rem;
+  margin: 20px 0;
+  color: var(--gold);
+}
+
+/******** PACKS ********/
+.packs {
+  padding: 50px 20px;
+}
+
+.packs h2 {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.pack-grid {
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(260px,1fr));
+  gap: 20px;
+}
+
+.pack {
+  background: var(--white);
+  border-radius: 16px;
+  padding: 22px;
+  text-align: center;
+  box-shadow: 0 8px 18px rgba(0,0,0,0.06);
+  position: relative;
+}
+
+.featured {
+  border: 2px solid var(--pink-dark);
+}
+
+.featured .tag {
+  position: absolute;
+  top: -12px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--pink-dark);
+  padding: 4px 10px;
+  border-radius: 8px;
+  color: white;
+  font-size: 0.75rem;
+}
+
+.price {
+  margin: 14px 0;
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+}
+
+.now {
+  color: var(--pink-dark);
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+
+.old {
+  text-decoration: line-through;
+  color: #777;
+}
+
+.btn-disabled {
+  background: #ccc;
+  border: none;
+  padding: 12px;
+  border-radius: 10px;
+  color: #fff;
+  cursor: not-allowed;
+}
+
+.waitlist {
+  margin-top: 6px;
+  font-size: 0.85rem;
+  color: var(--pink-dark);
+}
+
+/******** FORM ********/
+.waitlist-box {
+  background: var(--white);
+  margin: 50px 10%;
+  padding: 40px 20px;
+  border-radius: 18px;
+  text-align: center;
+  box-shadow: 0 10px 22px rgba(0,0,0,0.06);
+}
+
+.form input {
+  width: 90%;
+  padding: 12px;
+  margin: 10px 0;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+}
+
+.btn {
+  background: var(--pink-dark);
+  color: #fff;
+  border-radius: 10px;
+  padding: 14px;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+/* BOTÃO PRÉ-VENDA NO HEADER — GROSSO, FORTE E DESTAQUE */
+.btn-preventa {
+   background: var(--pink-dark);
+  color: #fff !important;
+  padding: 12px 22px;
+  border-radius: 14px;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  font-size: 0.95rem;
+  display: inline-block;
+  transition: 0.2s ease;
+  border: 2px solid var(--pink-dark);
+}
+
+.btn-preventa:hover {
+  background: #fff;
+  color: var(--pink-dark) !important;
+  border-color: var(--pink-dark);
+  transform: translateY(-2px);
+}
+
+/******** FAQ ********/
+.faq {
+  padding: 50px 20px;
+}
+
+details {
+  background: white;
+  padding: 14px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  box-shadow: 0 8px 14px rgba(0,0,0,0.05);
+}
+
+summary {
+  font-weight: 600;
+  cursor: pointer;
+}
+
+/******** FOOTER ********/
+.footer {
+  padding: 20px;
+  text-align: center;
+  color: #555;
+  font-size: 0.8rem;
+}
